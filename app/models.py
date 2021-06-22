@@ -8,7 +8,7 @@ class Shop(db.Model):
     sum = db.Column(db.NUMERIC)
     currency = db.Column(db.String(3))
     description = db.Column(db.TEXT)
-    sending_time = db.Column(db.DATETIME, default=datetime.now)
+    sending_time = db.Column(db.DateTime, default=datetime.now)
 
     def __repr__(self):
         return '<User {}>'.format(self.id)
